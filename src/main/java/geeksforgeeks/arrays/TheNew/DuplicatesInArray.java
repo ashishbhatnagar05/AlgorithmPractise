@@ -35,4 +35,14 @@ public class DuplicatesInArray {
             }
         }
     }
+
+    public void printDuplicateNumbersusingAbs(int[] input) {
+        for (int i = 0; i < input.length; i++) {
+            if (input[Math.abs(input[i])] >= 0) {
+                input[Math.abs(input[i])] = -input[Math.abs(input[i])];
+            } else {
+                System.out.println(Math.abs(input[i]) + " ");
+            }
+        }
+    }
 }

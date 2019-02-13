@@ -19,4 +19,10 @@ public class DuplicatesInArrayTest {
         sut.printDuplicateNumbersUsingHashMap(input);
     }
 
+    @Test
+    public void successUsingAbs() {
+        int[] input = new int[]{1, 2, 3, 1, 3, 6, 6};
+        sut.printDuplicateNumbersusingAbs(input);
+    }
+
 }
