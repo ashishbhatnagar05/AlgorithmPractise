@@ -1,6 +1,7 @@
 package codeforces.petr;
 
 import java.io.*;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class CodeTemplate {
@@ -17,8 +18,17 @@ public class CodeTemplate {
 
   static class Task {
     public void solve(int testNumber, CodeTemplate.InputReader in, PrintWriter out) {
-      int a = in.nextInt();
-      out.print(a);
+      int n = in.nextInt();
+      while (n >= 0) {
+        String word = in.next();
+        int ln = word.length();
+        if (ln > 10) {
+          System.out.println(word.charAt(0) + "" + (ln - 2) + "" + word.charAt(ln - 1));
+        } else {
+          System.out.println(word);
+        }
+        n--;
+      }
     }
   }
 
