@@ -82,6 +82,5 @@ public class SinglyLinkedList {
     list.addToTail(5);
     list.traverseFromHead();
     System.out.println(list.getDataFromEnd(3));
-    ;
   }
 }
